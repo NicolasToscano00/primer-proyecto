@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>tu peso en marte</title>
+    <style>
+    body
+    {
+      background-color: white;
+      color: black;
+    }
+    h1
+    {
+      color: skyblue;
+    }
+    p
+    {
+      color: brown;
+    }
+    p1
+    {
+      color: blue;
+    }
+    p2
+    {
+      color: green;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+    <p>
+    <p2>
+    <script>
+      var usuario = prompt("Cuanto pesas?");
+      var planeta = parseInt(prompt("Elije tu planeta:\n1 es Marte, 2 es Jupiter"));
+      var peso = parseInt(usuario);
+      var g_tierra = 9.8;
+      var g_marte = 3.7;
+      var g_jupiter = 24.8;
+      var peso_final;
+      var nombre;
+      var mensaje;
+      if(planeta == 1)
+      {
+        peso_final = parseInt (peso * g_marte / g_tierra);
+        nombre = "marte"
+        mensaje = "Tu peso en " + nombre + " es <strong>" + peso_final + " kilos</strong>"
+      }
+      else if(planeta == 2)
+      {
+        peso_final = parseInt (peso * g_jupiter / g_tierra);
+        nombre = "jupiter"
+        mensaje = "Tu peso en " + nombre + " es <strong>" + peso_final + " kilos</strong>"
+      }
+      else
+      {
+        peso_final = 200000;
+        peso_final = parseInt(peso_final);
+        mensaje = "Tenes " + peso_final + " cm de poronga en el culo, dejate de joder y pone bien el numerito pelotudo"
+      }
+      document.write(mensaje);
+    </script>
+    </p2>
+    </p>
+    <p>
+    <p1>
+    <script>
+      var x = 1;
+      var y = 2;
+      var z = x + y;
+      document.write("z = " + z)
+    </script>
+    </p1>
+    </p>
+  </body>
+</html>
